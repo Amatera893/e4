@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class dicegame
 {
@@ -6,6 +7,10 @@ public class dicegame
    {
        Random rand = new Random();
        int[] dice = new int[2];
+       Scanner scanner = new Scanner(System.in);
+       System.out.println("What is your name?");
+       String name = scanner.next();
+       System.out.println("Hello, "+name+"!");
        System.out.println("Rolling the dice...");
        for(int i=0 ; i<2 ; i++)
        {
